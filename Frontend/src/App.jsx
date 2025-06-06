@@ -10,7 +10,7 @@ const App = () => {
   const clientIdRef = useRef(crypto.randomUUID()); // ✅ unique ID
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:5000");
+    const socket = new WebSocket("https://video-chat-97yc.onrender.com");
     wsRef.current = socket;
 
     const pc = new RTCPeerConnection({
